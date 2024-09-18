@@ -1,0 +1,117 @@
+body {
+  background: rgb(59, 59, 59);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#logo-container {
+  position: absolute;
+  top: 5%;
+  width: 35%;
+  height: auto;
+  justify-content: center;
+}
+
+#pokelogo {
+  max-width: 100%; /* Ensures the image doesn't overflow */
+  max-height: 100%; /* Ensures the image fits the height */
+  object-fit: contain; /* Ensures the whole image is visible */
+}
+
+#main-container {
+  position: relative;
+  background: rgb(211, 211, 211);
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgb(211, 211, 211);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgb(211, 211, 211);
+  text-align: center;
+  top: 7%;
+}
+
+h2,
+label,
+p {
+  color: #8a8a8a;
+  margin: 8px 0px;
+}
+
+input {
+  width: calc(100% - 16px);
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid white;
+  margin-top: 20px;
+}
+
+button {
+  background: rgb(111, 145, 158);
+  color: rgb(44, 44, 44);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100px;
+  font-size: 15px;
+}
+
+button:hover {
+  background: rgb(75, 110, 130);
+}
+
+#temp-div p {
+  font-size: 60px;
+  margin-top: -30px;
+}
+
+#pokemon-name {
+  font-size: 15px;
+  color: #8a8a8a;
+}
+
+#pokemonsprite {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 10px;
+  margin-bottom: 0;
+  display: none;
+}
+
+/*
+
+#hourly-forecast {
+  margin-top: 50px;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hourly-item {
+  flex: 0 0 auto;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+  color: white;
+}
+
+.hourly-item img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+#hourly-heading {
+  color: #fff;
+  margin-top: 10px;
+} */

@@ -18,6 +18,10 @@ async function fetchData() {
 
     imgElement.src = pokemonSprite;
     imgElement.style.display = "block";
+
+    const pokeNameDiv = document.getElementById("pokemon-name");
+    pokeNameDiv.innerHTML = "";
+    pokeNameDiv.innerHTML = `<h3>${data.name.toUpperCase()}</h3>`;
   } catch (error) {
     console.error("Error", error);
   }
